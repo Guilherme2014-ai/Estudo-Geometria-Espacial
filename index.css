@@ -9,6 +9,9 @@ h1, h2 {
   font-family: "Roboto", sans-serif;
 }
 
+main {
+  padding: 20px;
+}
 main header {
   display: flex;
   flex-direction: column;
@@ -19,7 +22,7 @@ main header img {
   -webkit-animation: rotate ease-in-out infinite 5s;
           animation: rotate ease-in-out infinite 5s;
   margin-top: 50px;
-  width: 100px;
+  max-width: 100px;
 }
 main section {
   margin: 0 50px;
@@ -39,6 +42,20 @@ main section .images_container {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+main section .images_container img {
+  max-width: 300px;
+}
+@media (max-width: 800px) {
+  main section .images_container {
+    flex-direction: column;
+  }
+}
+main section .triangleFigures {
+  gap: 30px;
+}
+main section .prismaFigures {
+  justify-content: flex-start;
 }
 
 @-webkit-keyframes rotate {
