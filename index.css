@@ -44,6 +44,7 @@ main section .images_container {
   justify-content: center;
 }
 main section .images_container img {
+  width: 100%;
   max-width: 300px;
 }
 @media (max-width: 800px) {
@@ -56,6 +57,9 @@ main section .triangleFigures {
 }
 main section .prismaFigures {
   justify-content: flex-start;
+}
+main section .pyramide-triangle img {
+  max-width: 600px;
 }
 
 @-webkit-keyframes rotate {
